@@ -1,0 +1,26 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+check_death	/Users/jonasgregorio/swidden/household.py	/^    def check_death(self):$/;"	m	language:Python	class:Household
+check_move	/Users/jonasgregorio/swidden/household.py	/^    def check_move(self):$/;"	m	language:Python	class:Household
+choose_land	/Users/jonasgregorio/swidden/household.py	/^    def choose_land(self):$/;"	m	language:Python	class:Household
+claim_land	/Users/jonasgregorio/swidden/household.py	/^    def claim_land(self):$/;"	m	language:Python	class:Household
+get_distance	/Users/jonasgregorio/swidden/household.py	/^    def get_distance(self, next_coords):$/;"	m	language:Python	class:Household
+get_neighborhood	/Users/jonasgregorio/swidden/household.py	/^    def get_neighborhood(self, radius):$/;"	m	language:Python	class:Household
+Household	/Users/jonasgregorio/swidden/household.py	/^class Household:$/;"	c	language:Python
+Household	/Users/jonasgregorio/swidden/model.py	/^from household import Household$/;"	i	language:Python
+hypot	/Users/jonasgregorio/swidden/household.py	/^from math import hypot$/;"	i	language:Python
+Model	/Users/jonasgregorio/swidden/model.py	/^class Model:$/;"	c	language:Python
+move_to	/Users/jonasgregorio/swidden/household.py	/^    def move_to(self, coords):$/;"	m	language:Python	class:Household
+next_id	/Users/jonasgregorio/swidden/model.py	/^    def next_id(self):$/;"	m	language:Python	class:Model
+np	/Users/jonasgregorio/swidden/model.py	/^import numpy as np$/;"	i	language:Python
+randint	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
+random	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
+random_coords	/Users/jonasgregorio/swidden/model.py	/^    def random_coords(self):$/;"	m	language:Python	class:Model
+regrow_patch	/Users/jonasgregorio/swidden/model.py	/^    def regrow_patch(self):$/;"	m	language:Python	class:Model
+reproduce	/Users/jonasgregorio/swidden/household.py	/^    def reproduce(self):$/;"	m	language:Python	class:Household
+setup_households	/Users/jonasgregorio/swidden/model.py	/^    def setup_households(self):$/;"	m	language:Python	class:Model
+setup_patches	/Users/jonasgregorio/swidden/model.py	/^    def setup_patches(self):$/;"	m	language:Python	class:Model
+step	/Users/jonasgregorio/swidden/household.py	/^    def step(self):$/;"	m	language:Python	class:Household
+step	/Users/jonasgregorio/swidden/model.py	/^    def step(self):$/;"	m	language:Python	class:Model
+uniform	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
+__init__	/Users/jonasgregorio/swidden/household.py	/^    def __init__(self, model, coords, energy, move_threshold, move_dist,$/;"	m	language:Python	class:Household
+__init__	/Users/jonasgregorio/swidden/model.py	/^    def __init__(self, height, width, adaptive, init_households, move_rate,$/;"	m	language:Python	class:Model
