@@ -1,26 +1,54 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+agents_here	/Users/jonasgregorio/swidden/household.py	/^    def agents_here(self):$/;"	m	language:Python	class:Household
+app	/Users/jonasgregorio/swidden/run.py	/^app = App(root)$/;"	v	language:Python
+App	/Users/jonasgregorio/swidden/run.py	/^class App:$/;"	c	language:Python
+backends	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.backends.backend_tkagg as tkagg$/;"	i	language:Python
 check_death	/Users/jonasgregorio/swidden/household.py	/^    def check_death(self):$/;"	m	language:Python	class:Household
 check_move	/Users/jonasgregorio/swidden/household.py	/^    def check_move(self):$/;"	m	language:Python	class:Household
+choice	/Users/jonasgregorio/swidden/household.py	/^from random import random, randint, choice$/;"	i	language:Python
 choose_land	/Users/jonasgregorio/swidden/household.py	/^    def choose_land(self):$/;"	m	language:Python	class:Household
 claim_land	/Users/jonasgregorio/swidden/household.py	/^    def claim_land(self):$/;"	m	language:Python	class:Household
+die	/Users/jonasgregorio/swidden/household.py	/^    def die(self):$/;"	m	language:Python	class:Household
+farm	/Users/jonasgregorio/swidden/household.py	/^    def farm(self, land):$/;"	m	language:Python	class:Household
+from_levels_and_colors	/Users/jonasgregorio/swidden/run.py	/^from matplotlib.colors import from_levels_and_colors$/;"	i	language:Python
 get_distance	/Users/jonasgregorio/swidden/household.py	/^    def get_distance(self, next_coords):$/;"	m	language:Python	class:Household
 get_neighborhood	/Users/jonasgregorio/swidden/household.py	/^    def get_neighborhood(self, radius):$/;"	m	language:Python	class:Household
 Household	/Users/jonasgregorio/swidden/household.py	/^class Household:$/;"	c	language:Python
 Household	/Users/jonasgregorio/swidden/model.py	/^from household import Household$/;"	i	language:Python
 hypot	/Users/jonasgregorio/swidden/household.py	/^from math import hypot$/;"	i	language:Python
+innovate	/Users/jonasgregorio/swidden/household.py	/^    def innovate(self):$/;"	m	language:Python	class:Household
+matplotlib	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.backends.backend_tkagg as tkagg$/;"	i	language:Python
+matplotlib	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.figure as mplfig$/;"	i	language:Python
+matplotlib	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.pyplot as plt$/;"	i	language:Python
 Model	/Users/jonasgregorio/swidden/model.py	/^class Model:$/;"	c	language:Python
-move_to	/Users/jonasgregorio/swidden/household.py	/^    def move_to(self, coords):$/;"	m	language:Python	class:Household
+Model	/Users/jonasgregorio/swidden/run.py	/^from model import Model$/;"	i	language:Python
+move	/Users/jonasgregorio/swidden/household.py	/^    def move(self):$/;"	m	language:Python	class:Household
+move_to	/Users/jonasgregorio/swidden/household.py	/^    def move_to(self, new_coords):$/;"	m	language:Python	class:Household
+mplfig	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.figure as mplfig$/;"	i	language:Python
 next_id	/Users/jonasgregorio/swidden/model.py	/^    def next_id(self):$/;"	m	language:Python	class:Model
 np	/Users/jonasgregorio/swidden/model.py	/^import numpy as np$/;"	i	language:Python
+pause_model	/Users/jonasgregorio/swidden/run.py	/^    def pause_model(self):$/;"	m	language:Python	class:App
+plot_model	/Users/jonasgregorio/swidden/run.py	/^    def plot_model(self):$/;"	m	language:Python	class:App
+plt	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.pyplot as plt$/;"	i	language:Python
+randint	/Users/jonasgregorio/swidden/household.py	/^from random import random, randint, choice$/;"	i	language:Python
 randint	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
+random	/Users/jonasgregorio/swidden/household.py	/^from random import random, randint, choice$/;"	i	language:Python
 random	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
 random_coords	/Users/jonasgregorio/swidden/model.py	/^    def random_coords(self):$/;"	m	language:Python	class:Model
 regrow_patch	/Users/jonasgregorio/swidden/model.py	/^    def regrow_patch(self):$/;"	m	language:Python	class:Model
+relinquish_land	/Users/jonasgregorio/swidden/household.py	/^    def relinquish_land(self):$/;"	m	language:Python	class:Household
 reproduce	/Users/jonasgregorio/swidden/household.py	/^    def reproduce(self):$/;"	m	language:Python	class:Household
+root	/Users/jonasgregorio/swidden/run.py	/^root = tk.Tk()$/;"	v	language:Python
+run_model	/Users/jonasgregorio/swidden/run.py	/^    def run_model(self):$/;"	m	language:Python	class:App
 setup_households	/Users/jonasgregorio/swidden/model.py	/^    def setup_households(self):$/;"	m	language:Python	class:Model
+setup_model	/Users/jonasgregorio/swidden/run.py	/^    def setup_model(self):$/;"	m	language:Python	class:App
 setup_patches	/Users/jonasgregorio/swidden/model.py	/^    def setup_patches(self):$/;"	m	language:Python	class:Model
 step	/Users/jonasgregorio/swidden/household.py	/^    def step(self):$/;"	m	language:Python	class:Household
 step	/Users/jonasgregorio/swidden/model.py	/^    def step(self):$/;"	m	language:Python	class:Model
+step_model	/Users/jonasgregorio/swidden/run.py	/^    def step_model(self):$/;"	m	language:Python	class:App
+tk	/Users/jonasgregorio/swidden/run.py	/^import tkinter as tk$/;"	i	language:Python
+tkagg	/Users/jonasgregorio/swidden/run.py	/^import matplotlib.backends.backend_tkagg as tkagg$/;"	i	language:Python
 uniform	/Users/jonasgregorio/swidden/model.py	/^from random import random, randint, uniform$/;"	i	language:Python
 __init__	/Users/jonasgregorio/swidden/household.py	/^    def __init__(self, model, coords, energy, move_threshold, move_dist,$/;"	m	language:Python	class:Household
 __init__	/Users/jonasgregorio/swidden/model.py	/^    def __init__(self, height, width, adaptive, init_households, move_rate,$/;"	m	language:Python	class:Model
+__init__	/Users/jonasgregorio/swidden/run.py	/^    def __init__(self, master):$/;"	m	language:Python	class:App
