@@ -126,6 +126,10 @@ class Model:
                         not self.grid['site'][y, x]):
                     self.grid['owner'][y, x] = -1
 
+                if self.clearing_rate and self.grid['vegetation'][y, x]:
+                    self.grid['veg_clear_cost'][y, x] = ((self.init_energy * self.clearing_rate / 100) *
+                                                         (self.grid['vegetation'][y, x] / self.max_veg))
+
     def step(self):
         if self.bad_years != 0 and randint(1, 100) <= self.bad_years:
             self.divisor = 2

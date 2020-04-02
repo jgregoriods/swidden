@@ -20,14 +20,15 @@ class App:
         self.canvas.get_tk_widget().grid(row=1, column=3, columnspan=6,
                                          rowspan=12)
 
-        self.cmap, self.norm = from_levels_and_colors([1, 2, 3, 4, 5, 6, 7, 8],
-                                                      ['darkseagreen',
+        self.cmap, self.norm = from_levels_and_colors([1, 2, 3, 4, 5, 6, 7, 8, 9],
+                                                      ['forestgreen',
                                                        'crimson',
                                                        'mediumseagreen',
                                                        'tab:pink',
                                                        'tab:brown',
                                                        'mediumpurple',
-                                                       'palegreen'])
+                                                       'palegreen',
+                                                       'white'])
 
         # Controls
         self.setup_button = tk.Button(master, text='Setup',
@@ -148,9 +149,9 @@ class App:
                            move_rate=self.move_rate_slider.get(),
                            move_cost_rate=self.move_cost_rate_slider.get(),
                            fertility_loss_rate=self.fert_loss_slider.get(),
-                           restore_rate=self.restore_rate_slider.get(),
+                           restore_rate=self.restore_rate_slider.get() / 100,
                            bad_years=self.bad_years_slider.get(),
-                           innovation_rate=self.init_households_slider.get(),
+                           innovation_rate=self.innovation_rate_slider.get(),
                            transfer_ownership=self.transfer.get(),
                            max_fallow=self.max_fallow_slider.get())
         self.plot_model()
@@ -172,13 +173,15 @@ class App:
 
     def plot_model(self):
         self.ax.cla()
+        self.ax.set_xlim(0, 100)
+        self.ax.set_ylim(0, 100)
         self.ax.imshow(self.model.grid['color'], cmap=self.cmap,
                        norm=self.norm)
         pts = [self.model.agents[unique_id].coords for
                unique_id in self.model.agents]
-        sizes = [self.model.agents[unique_id].agents_here() * 10 for
+        sizes = [self.model.agents[unique_id].agents_here()**2 * 20 for
                  unique_id in self.model.agents]
-        self.ax.scatter(*zip(*pts), s=sizes)
+        self.ax.scatter(*zip(*pts), s=sizes, marker="p", color="black")
         self.canvas.draw()
 
 

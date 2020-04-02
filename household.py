@@ -186,7 +186,7 @@ class Household:
                                       min_fertility=self.min_fertility)
 
             if (self.model.adaptive and
-                    randint(1, 1000) <= self.model.innovation_rate):
+                    randint(1, 1001) <= self.model.innovation_rate):
                 new_household.innovate()
 
             new_household.move()
